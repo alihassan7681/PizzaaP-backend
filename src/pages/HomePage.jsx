@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { FaPizzaSlice, FaBolt, FaLeaf, FaStar, FaPhone, FaEnvelope, FaMapMarkerAlt, FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
 
 function HomePage() {
@@ -36,9 +37,9 @@ function HomePage() {
             </div>
 
             {/* CTA Button */}
-            <a href="/order" className="hidden md:block bg-pizza-yellow text-pizza-black px-6 py-2 rounded-full font-semibold hover:bg-yellow-500 transition-all transform hover:scale-105">
+            <Link to="/order" className="hidden md:block bg-pizza-yellow text-pizza-black px-6 py-2 rounded-full font-semibold hover:bg-yellow-500 transition-all transform hover:scale-105">
               Order Now
-            </a>
+            </Link>
 
             {/* Mobile Menu Button */}
             <button 
@@ -64,9 +65,9 @@ function HomePage() {
               <a href="#menu" className="block hover:text-pizza-yellow transition-colors">Menu</a>
               <a href="#about" className="block hover:text-pizza-yellow transition-colors">About</a>
               <a href="#contact" className="block hover:text-pizza-yellow transition-colors">Contact</a>
-              <a href="/order" className="block w-full bg-pizza-yellow text-pizza-black px-6 py-2 rounded-full font-semibold text-center">
+              <Link to="/order" className="block w-full bg-pizza-yellow text-pizza-black px-6 py-2 rounded-full font-semibold text-center">
                 Order Now
-              </a>
+              </Link>
             </div>
           </div>
         )}
@@ -88,10 +89,10 @@ function HomePage() {
                 Fresh ingredients, authentic recipes, and out-of-this-world flavors that will transport your taste buds to another planet!
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                <a href="/order" className="bg-pizza-yellow text-pizza-black px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-bold hover:bg-yellow-500 transition-all transform hover:scale-105 shadow-lg text-center flex items-center justify-center space-x-2">
+                <Link to="/order" className="bg-pizza-yellow text-pizza-black px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-bold hover:bg-yellow-500 transition-all transform hover:scale-105 shadow-lg text-center flex items-center justify-center space-x-2">
                   <span>Order Now</span>
                   <FaPizzaSlice />
-                </a>
+                </Link>
                 <a href="#menu" className="border-2 border-pizza-yellow text-pizza-yellow px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-bold hover:bg-pizza-yellow hover:text-pizza-black transition-all transform hover:scale-105 text-center">
                   View Menu
                 </a>
